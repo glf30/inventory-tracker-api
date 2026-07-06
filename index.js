@@ -10,6 +10,9 @@ app.use(logger('dev'))
 const suppliersRouter = require("./routes/supplier/suppliersRouter");
 app.use("/api/v1/suppliers", suppliersRouter);
 
+const itemsRouter = require("./routes/items/itemsRouter");
+app.use("/api/v1/items", itemsRouter);
+
 const PORT = 3000
 
 app.listen(PORT, () => {
